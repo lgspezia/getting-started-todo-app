@@ -1,4 +1,4 @@
-###################################################
+####################################################
 # Stage: base
 # 
 # This base stage ensures all other stages are using the same base image
@@ -52,7 +52,7 @@ RUN npm run build
 #
 # This stage is used as the base for the backend-dev and test stages, since
 # there are common steps needed for each.
-###################################################
+####################################################
 FROM base AS backend-dev
 COPY backend/package.json backend/package-lock.json ./
 RUN npm install
